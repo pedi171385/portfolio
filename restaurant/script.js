@@ -117,6 +117,26 @@ document.addEventListener('mousemove', (e) => {
 
 /* ================= CUSTOM CURSOR ================= */
 
+const isDesktop =
+window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+if(isDesktop){
+
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
+
+    window.addEventListener('mousemove',(e)=>{
+
+        dot.style.left = e.clientX + 'px';
+        dot.style.top = e.clientY + 'px';
+
+        ring.style.left = e.clientX + 'px';
+        ring.style.top = e.clientY + 'px';
+
+    });
+
+}
+
 const dot = document.querySelector('.cursor-dot');
 const ring = document.querySelector('.cursor-ring');
 
