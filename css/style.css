@@ -502,10 +502,36 @@ button:hover{
 }
 
 
+/* ===== DESKTOP CURSOR ONLY ===== */
+
+@media (hover: hover) and (pointer: fine){
+
+    body{
+        cursor:none;
+    }
+
+    .cursor-dot,
+    .cursor-ring{
+        display:block;
+    }
+}
+
+@media (hover: none), (pointer: coarse){
+
+    .cursor-dot,
+    .cursor-ring{
+        display:none;
+    }
+}
+
 
 /* Tablet */
 
 @media (max-width: 1024px){
+
+    .body{
+        cursor:none;
+    }
 
     .glass{
         flex-direction:column;
@@ -542,6 +568,10 @@ button:hover{
 /* Mobile */
 
 @media (max-width: 768px){
+
+    .body{
+        cursor:none;
+    }
 
     .navbar{
         flex-direction:column;
@@ -740,6 +770,10 @@ button:hover{
 /* Small Mobile */
 
 @media (max-width: 480px){
+
+    .body{
+        cursor:none;
+    }
 
     .content h1{
         font-size:2.2rem;
