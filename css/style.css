@@ -502,29 +502,6 @@ button:hover{
 }
 
 
-/* ===== DESKTOP CURSOR ONLY ===== */
-
-@media (hover: hover) and (pointer: fine){
-
-    body{
-        cursor:none;
-    }
-
-    .cursor-dot,
-    .cursor-ring{
-        display:block;
-    }
-}
-
-@media (hover: none), (pointer: coarse){
-
-    .cursor-dot,
-    .cursor-ring{
-        display:none;
-    }
-}
-
-
 /* Tablet */
 
 @media (max-width: 1024px){
