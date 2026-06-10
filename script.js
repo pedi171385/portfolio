@@ -191,3 +191,17 @@ closeAdmin.addEventListener('click',()=>{
     adminPanel.classList.remove('active');
 
 });
+
+const dot = document.querySelector('.cursor-dot');
+const ring = document.querySelector('.cursor-ring');
+
+window.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    dot.style.left = x + 'px';
+    dot.style.top = y + 'px';
+
+    ring.style.left = x + 'px';
+    ring.style.top = y + 'px';
+});
